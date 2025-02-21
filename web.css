@@ -1,0 +1,1524 @@
+/* 
+merun   #780C28 text
+
+green light #CAE0BC 
+
+background  #EAFAEA  used
+heading #6E8E59 
+PurePixels.com
+*/
+body {
+  
+
+  background-color: #fff; /* Default background */
+  width: 100%;
+  min-height: 100vh; /* Ensures body covers full viewport height */
+  overflow-x: hidden; /* Prevents horizontal scrollbars */
+}
+
+
+/* * {
+  outline: 1px solid red; /* Helps to visualize overflowing elements */
+
+
+html {
+
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents unexpected element sizes */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* body{
+  
+   overflow-y: auto;   
+  overflow-x: hidden; 
+  margin:0%;
+  padding: 0%;
+   width: 100%;
+    /* box-sizing: border-box;
+    background-color:#EAFAEA ;
+
+} */
+
+::-webkit-scrollbar{
+  display: none;
+}
+:root{
+  --merun-color: #a43d58;
+  --darkgreen-color:#6E8E59 ;
+  --lightgreen-color:#CAE0BC;
+  --green-color:#EAFAEA;
+  
+  
+  
+} 
+.grechen-fuemen-regular {
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    padding: 1vh;
+    color: #a43d58;
+  }
+
+#nav{
+ 
+  position: sticky;
+  top: 0%;
+  display: flex;
+  height: 11vh;
+    width: 100%;
+    background-color:#CAE0BC ;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-evenly;
+ 
+
+
+}
+
+a{
+
+
+  text-decoration: none;
+}
+/* From Uiverse.io by CristianMontoya98 */ 
+.btn {
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  background: white;
+  color:var(--darkgreen-color);
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+ }
+ 
+ button:hover {
+  color:white;
+ }
+ 
+ button:after {
+  content: "";
+  background: var(--merun-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+ }
+ 
+ button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+ }
+.camera{
+   font-size: 3rem;
+   padding: 2vh;
+}
+
+
+
+/* From Uiverse.io by samuelfcosta18 */ 
+section.card1 {
+  position: relative;
+  width: 70vh;
+  height: 70vh;
+  background-color: var(--merun-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2rem;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* .card1 svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+} */
+.front-card1{
+  width: 100%;
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: var(--green-color);
+  color: #ffffff;
+}
+
+.card1__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+ 
+  box-sizing: border-box;
+  background-color: var(--green-color);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1:hover .card1__content {
+  transform: rotateX(0deg);
+}
+
+.card1__title {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card1:hover svg {
+  scale: 0;
+}
+
+.card1__description {
+  
+
+  width: auto;
+  height: 100%;
+
+  /* object-fit: cover;
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4; */
+}
+/* Commands to change the shadows in dark mode
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+  box-shadow: 0 8px 16px #000000;
+  }
+}*/
+
+/* 2nd pages start */
+.main{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-basis: 50%;
+    
+}
+.welcome{
+
+    /* margin: 4em; */
+    padding: 5em;
+    flex-basis: 50%;
+    
+   
+    
+    
+}
+h3{
+    font-size: 2em;
+
+    color: #FFB200;
+}
+
+
+
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 100%;
+  height:100%;
+
+  perspective: 1000px;
+}
+
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width:10%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  width:100%
+  
+
+}
+
+.card-back {
+  background-color: #F08A5D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+/* ---- */
+.explore{
+
+
+
+    height: 10vh;
+    width: 30vh;
+    background-color:var(--merun-color);
+    border-radius: 5%;
+    border: none;
+    color:wheat;
+    font-size: 1.5rem;
+    
+}
+.explore:hover{
+   transition-delay: 0.1s;
+
+
+    height: 10vh;
+    width: 30vh;
+    background-color: #FFB200;
+    border-radius: 5%;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    
+
+}
+
+#down1{
+  display: flex;
+}
+
+/* 
+.right{
+  display: flex;
+
+    flex-basis: 50%;
+    height: auto;
+    background-color: var(--darkgreen-color);
+   margin: 5em;
+
+} */
+/* .right>img{
+    width: 30%;
+    border: 2rem solid white;
+} */
+
+
+
+#img1{
+  
+  width: 90%;
+}
+#img1 img{
+  display: block;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+  float: left;
+
+}
+#img2{
+  width: 90%;
+}
+#img2 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+#img3{
+  width: 90%;
+}
+#img3 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+#img4{
+  width: 90%;
+}
+#img4 img{
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+
+
+
+
+
+
+
+#img11{
+  
+  width: 70%;
+}
+#img11 img{
+  display: block;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+  float: left;
+
+}
+
+#img22{
+  width: 100%;
+}
+#img22 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+
+
+/* #img33{
+  width: 50%;
+}
+#img33 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+} */
+
+
+
+
+
+
+.main1{
+ 
+  
+
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.work{
+
+    height: 10vh;
+    width: 30vh;
+    background-color:var(--darkgreen-color);
+    border-radius: 5%;
+    border: none;
+    color:white;
+    font-size: 1.5rem;
+
+}
+.work:hover{
+    transition-delay: 0.1s;
+
+
+    height: 10vh;
+    width: 30vh;
+    background-color:black;
+    border-radius: 5%;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    
+}
+
+
+main{
+    display: flex;
+}
+/* .main2>h3{
+    display: flex;
+    justify-content: center;
+}
+.main2>h1{
+    color: var(--darkgreen-color);
+    display: flex;
+   align-items: center;
+} */
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  margin: 1rem;
+
+
+}
+.card img{
+
+  width: auto;
+  height: 100%;
+}
+.card #c4{
+  width: 100%;
+  height: auto;
+}
+
+.card #c2{
+  width: 100%;
+  height: auto;
+}
+#c1{
+  width: 100%;
+  height: 100%;
+}
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  #card1{
+    margin-top: 5rem;
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+
+
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
+.why{
+    display: flex;
+    justify-content: space-evenly;
+    
+  
+}
+
+.main2{
+  padding: 5em;
+}
+
+.services{
+  padding: 5em;
+    background-color: whitesmoke;
+}
+
+
+.services>h3{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    display: flex;
+
+    justify-content: space-evenly;
+    text-align: center;
+    
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 1vh;
+    color: #a43d58;
+
+    
+}
+
+.img1>img{
+ 
+    margin-top: 5%;
+    width: 30vh;
+    margin: 1rem; 
+}
+
+
+.img2>img{
+ 
+  margin-top: 5%;
+  width: 30vh;
+  margin: 1rem; 
+}
+
+
+.img3>img{
+ 
+  margin-top: 5%;
+  width: 30vh;
+  margin: 1rem; 
+}
+
+
+.img4>img{
+ 
+  margin-top: 5%;
+  width: 30vh;
+  margin: 1rem; 
+}
+
+
+#img1{
+
+  margin-bottom: 5rem;
+
+}
+
+
+#img2{
+  margin-top: 5rem;
+  
+}
+
+#img3{
+
+  margin-bottom: 5rem;
+
+}
+
+
+#img4{
+  margin-top: 5rem;
+  
+}
+
+
+.img1:hover{
+
+    margin: 1vh;
+    border: 1vh solid var(--merun-color);
+    box-shadow: 5px 5px 50px gray;
+
+    transform:scale(1.1);
+    transition: 1s;
+}
+
+
+.img2:hover{
+
+  margin: 1vh;
+  border: 1vh solid var(--merun-color);
+  box-shadow: 5px 5px 50px gray;
+
+  transform:scale(1.1);
+  transition: 1s;
+}
+
+
+.img3:hover{
+
+  margin: 1vh;
+  border: 1vh solid var(--merun-color);
+  box-shadow: 5px 5px 50px gray;
+
+  transform:scale(1.1);
+  transition: 1s;
+}
+
+.img4:hover{
+
+  margin: 1vh;
+  border: 1vh solid var(--merun-color);
+  box-shadow: 5px 5px 50px gray;
+
+  transform:scale(1.1);
+  transition: 1s;
+}
+  
+/* how can i hover img only */
+
+/* .img2:hover{
+
+    margin: 1vh;
+    border: 1vh solid var(--merun-color);
+
+    transform:scale(1.1);
+    transition: 1s;
+
+}
+.img3:hover{
+
+  margin: 1vh;
+  border: 1vh solid var(--merun-color);
+  box-shadow: 5px 5px 10px gray;
+
+  transform:scale(1.1);
+  transition: 1s;
+
+}
+
+.img4:hover{
+
+    margin: 0.5vh;
+    border: 1vh solid var(--merun-color);
+
+    transform:scale(1.1);
+    transition: 1s;
+} */
+
+
+
+
+/* From Uiverse.io by Daniel1227k */ 
+.cardt {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardt::before {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+  }
+  
+  .cardt::after {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+    filter: blur(30px);
+  }
+  
+  .cardt b {
+    position: absolute;
+    inset: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+  
+  .cardt img {
+    position: absolute;
+    z-index: 3;
+    scale: 0.8;
+    opacity: 0.25;
+    transition: 0.5s;
+  }
+  
+  .cardt:hover img {
+    scale: 0.5;
+    opacity: 0.9;
+    transform: translateY(-70px);
+  }
+  
+  .cardt .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .cardt:hover .content {
+    transform: scale(1);
+    bottom: 25px;
+  }
+  
+  .content .title {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .content .title span {
+    font-weight: 300;
+    font-size: 0.70em;
+  }
+  
+  .content .sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .sci li {
+    list-style: none;
+  }
+  
+  .sci li .fa-brands {
+    width: 14px;
+  }
+  
+  .sci li .fa-facebook {
+    width: 10px;
+  }
+  
+  .sci li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  .sci li a:hover {
+    fill: currentColor;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+.team{
+  background-color: var(--green-color);
+  color: var(--merun-color);
+
+ 
+  
+}
+.team>h3{
+    display: flex;
+    justify-content: center;
+
+}
+
+.team>h1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.teamcard{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem;
+
+  
+}
+
+
+.cardt{
+  margin: 1rem;
+}
+.teamcard .cardt:hover{
+
+  transform: scale(1.4);
+  transition-duration: 0.8s;
+
+
+}
+
+
+
+/* about  */
+
+
+.grechen-fuemen-regular1{
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    padding: 1vh;
+    color: #a43d58;
+  }
+
+.about{
+    background-color: var(--darkgreen-color);
+    height: 80vh;
+    padding: 4em;
+}
+
+/* contact */
+
+
+
+#contact i{
+    display: inline-block;
+}
+
+#location{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+
+
+}
+
+#call{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+}
+
+#mail{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+}
+.about i{
+    margin: 2%;
+
+}
+
+
+
+
+/* icons */
+
+  /* From Uiverse.io by c */ 
+.carda {
+
+    width: fit-content;
+    height: fit-content;
+    /* background-color: rgb(155, 46, 46); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color:var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 50%;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  .card1:hover{
+    background-color: transparent;
+
+  }
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: var(--merun-color);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+
+#call:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+#location:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+#mail:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* ------media queries------------------------------------------------------------------ */
+
+
+@media only screen and (max-width: 768px) {
+    
+
+
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  
+nav{
+   display: none !important;
+    
+}
+
+
+/* .grechen-fuemen-regular {
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 1vh;
+  color: #a43d58;
+}
+
+
+.camera{
+   font-size: 2rem;
+   padding: 2vh;
+   
+} */
+
+.main{
+  display: flex;
+    flex-direction: column;
+}
+.welcome{
+    padding: 1em !important; 
+    font-size: 0.8rem !important;
+
+}
+
+h1{
+    font-size: 3rem !important;
+    color: #777;
+    margin:2rem 0  ;
+
+   
+}
+p{
+    font-size: 1rem !important;
+    margin:2rem 0  ;
+
+}
+.explore{
+
+
+
+  height: 10vh;
+  width: 30vh;
+  background-color:var(--merun-color);
+  border-radius: 5%;
+  border: none;
+  color:wheat;
+  font-size: 1rem;
+  
+}
+.explore:hover{
+ transition-delay: 0.1s;
+
+
+  height: 10vh;
+  width: 30vh;
+  background-color: #FFB200;
+  border-radius: 5%;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  
+
+}
+/* ------------till .explore btn over  */
+/* #call:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+#location:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+#mail:hover{
+  color: var(--merun-color);
+  
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+#img1{
+  
+  width: 90%;
+}
+#img1 img{
+  display: block;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+  float: left;
+
+}
+
+
+
+#img2{
+  width: 90%;
+}
+#img2 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+
+
+#img3{
+  width: 90%;
+}
+#img3 img{
+  float: left;
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+
+#img4{
+  width: 90%;
+}
+#img4 img{
+  border: 1rem solid wheat;
+  margin: 6%;
+
+}
+
+
+
+.main1{
+ 
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.work{
+
+  height: 10vh;
+  width: 30vh;
+  background-color:var(--darkgreen-color);
+  border-radius: 5%;
+  border: none;
+  color:white;
+  font-size: 1.5rem;
+
+}
+.work:hover{
+  transition-delay: 0.1s;
+
+
+  height: 10vh;
+  width: 30vh;
+  background-color:black;
+  border-radius: 5%;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+ #card1{
+
+  margin: 10% !important;
+
+
+  
+
+ }
+
+
+ .main1{
+  display: flex;
+    flex-direction: column;
+  
+}
+
+h3{
+  font-size: 2em;
+  margin: 1rem;
+  color:var(--merun-color);
+}
+
+section.card1 {
+
+  width: 60vh;
+  height: 90vh;
+  background-color: var(--merun-color);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2rem;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+  [data-aos] {
+    opacity: 1 !important;   /* Make elements visible */
+    transform: none !important; /* Remove animation effects */
+    transition: none !important; /* Disable transitions */
+}
+.main1{
+  width: 100wh !important;
+}
+
+
+
+/* complted till 2nd page */
+.img22{
+  margin: 2rem 1rem 2rem -1rem;
+
+}
+/* 2rd pages over */
+
+/* 3rd pages now  why? */
+
+.card__description {
+  margin: 9px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+
+
+.why{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+
+}
+
+.main2{
+padding: 1em;
+}
+
+/* 4TH PAGE */
+
+.services{
+  padding: 2em;
+    background-color: whitesmoke;
+}
+
+
+.services>h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.img{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  text-align: center;
+  
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #a43d58;
+  
+
+  
+}
+
+#img1{
+
+margin: 1rem;
+
+}
+
+
+#img2{
+  margin: 1rem;
+
+}
+
+#img3{
+  margin: 1rem;
+
+}
+
+
+#img4{
+  margin: 1rem;
+
+}
+
+/* 6th page */
+
+.teamcard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem;
+
+  
+}
+
+
+.cardt{
+  margin: 1.5rem;
+}
+.teamcard .cardt:hover{
+
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+
+
+}
+
+/* about section */
+
+
+
+
+.grechen-fuemen-regular1{
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  padding: 1vh;
+  color: #a43d58;
+}
+
+.about{
+  background-color: var(--darkgreen-color);
+  height: auto;
+
+  padding: 2em;
+}
+
+/* contact */
+
+
+
+#contact i{
+  display: inline-block;
+  margin: 1rem;
+}
+
+
+}
+/* _____________till 768px it works__________________________________________________________________________________ */
+
+/* now other devices which are abover 786px till large size */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

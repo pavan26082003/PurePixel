@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .container>div{
+            background-color: aqua;
+            padding:20px;
+            margin: 5%;
+        }
+        /* .container{
+            grid-template-areas:
+           "head head head nav "
+           "head head head section1"
+           "section section section section"
+           "section section section section"        
+          
+           
+            ;
+        }
+        .item1{
+            grid-area:head ;
+        }
+
+        .item2{
+            grid-area:nav ;
+        }
+        .item3{
+            grid-area:section;
+        }
+        .item4{
+            grid-area:section1  ;
+        } */
+        .container{
+            display: inline-block;
+            gap:5px;
+        }
+        @media screen and (width<576px) {
+            .container{
+                padding:20px;
+                margin: 5%;
+                background-color: black;
+            
+            }
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+    13/02/2025
+
+    last class we discussed 
+
+    grid-- multi dimensional layout
+    fles is one dimensional
+    spanning is not possible in flex
+    responsiveness.
+
+    grid child properties
+    grid column:start/end
+    grid-row:  start/end
+------------------------------------------------------------
+
+    Grid-template-areas:
+
+    the css grid-template areas properety is a powerful feature of css grid layout,
+    allowing you to define areas within a grid container.
+    These areas can be used to assign grid items to specific section of the grid,making it easier to design
+    complex layout with a readable and maintainable structure.
+
+    Syntax:
+
+    grid-template-area:
+        "hader header header"
+        "sidebar main main"
+        "footer footer footer"
+
+
+
+
+        .container{
+            grid-template-areas:
+           "head head head nav "
+           "head head head section1"
+           "section section section section"
+           "section section section section"        
+          
+           
+            ;
+        }
+        .item1{
+            grid-area:head ;
+        }
+
+        .item2{
+            grid-area:nav ;
+        }
+        .item3{
+            grid-area:section;
+        }
+        .item4{
+            grid-area:section1  ;
+        }
+-----------------------------------------------------
+
+Responsiveness of websites:
+
+    Responsivesnes in web design refers to the ability of a website to adapt and display
+    appropriately acroos  various devices and screen size or devices types.
+
+Common Breakpoints Used in Responsive Design
+Breakpoints are specific screen widths where the layout adjusts to provide a better user experience on different devices. Below are the commonly used breakpoints:
+
+Breakpoint Name	Screen Width	Device Type
+Extra Small (xs)	≤ 576px	Small Phones (Portrait)
+Small (sm)	576px – 768px	Large Phones (Landscape)
+Medium (md)	768px – 992px	Tablets
+Large (lg)	992px – 1200px	Laptops
+Extra Large (xl)	1200px – 1400px	Desktops
+XXL (xxl)	≥ 1400px	Large Monitors, TVs
+
+CSS Media Query Examples for Each Breakpoint
+
+--- css
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+-------------------------------------------------------------------
+Media queries:
+
+Media queries are a CSS feature that allows you to apply styles based on device characteristics like screen width, height, orientation, resolution, etc. They help make websites responsive across different devices.
+
+this shoud use above the closing tag of style.
+syntax:
+
+@media (condition) {
+    /* CSS rules applied when condition is met */
+}
+
+@media screen and (width>1200){
+        .body{
+        color:blue
+        }
+    }
+----------------------------------------------------------------------------------
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    -->
+
+    <div class="container">
+        <div class="item1">head</div>
+        <div class="item2">nav</div>
+        <div class="item3">section</div>
+        <div class="item4">section1</div>
+        
+    </div>
+</body>
+</html>

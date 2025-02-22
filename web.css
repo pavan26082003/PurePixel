@@ -7,31 +7,26 @@ background  #EAFAEA  used
 heading #6E8E59 
 PurePixels.com
 */
-body {
+
+
+/* body {
   
 
   background-color: #fff; /* Default background */
-  width: 100%;
-  min-height: 100vh; /* Ensures body covers full viewport height */
-  overflow-x: hidden; /* Prevents horizontal scrollbars */
-}
+   /* width: 100%;  */
+   /* min-height: 100vh;  */
+   /* overflow-x: hidden;  */
 
 
-/* * {
-  outline: 1px solid red; /* Helps to visualize overflowing elements */
 
-
-html {
-
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
 * {
+
+
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Prevents unexpected element sizes */
   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
-}
+} 
 
 /* body{
   
@@ -45,9 +40,9 @@ html {
 
 } */
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   display: none;
-}
+} */
 :root{
   --merun-color: #a43d58;
   --darkgreen-color:#6E8E59 ;
@@ -67,7 +62,7 @@ html {
   }
 
 #nav{
- 
+
   position: sticky;
   top: 0%;
   display: flex;
@@ -191,9 +186,9 @@ section.card1 {
   font-weight: 700;
 }
 
-.card1:hover svg {
+/* .card1:hover svg {
   scale: 0;
-}
+} */
 
 .card1__description {
   
@@ -216,6 +211,7 @@ section.card1 {
 
 /* 2nd pages start */
 .main{
+
     padding: 0%;
     margin: 0%;
     display: flex;
@@ -562,11 +558,11 @@ main{
     color: #777;
     line-height: 1.4;
   }
-  
+/*   
   .card:hover svg {
     scale: 0;
     transform: rotate(-45deg);
-  }
+  } */
   
 .why{
     display: flex;
@@ -580,8 +576,9 @@ main{
 }
 
 .services{
+
   padding: 5em;
-    background-color: whitesmoke;
+   
 }
 
 
@@ -796,12 +793,11 @@ main{
     transition: 0.5s;
   }
   
-  .cardt:hover img {
+   .cardt:hover img {
     scale: 0.5;
     opacity: 0.9;
     transform: translateY(-70px);
-  }
-  
+  } 
   .cardt .content {
     position: absolute;
     z-index: 3;
@@ -815,7 +811,7 @@ main{
   
   .cardt:hover .content {
     transform: scale(1);
-    bottom: 25px;
+    bottom: 20px;
   }
   
   .content .title {
@@ -876,7 +872,8 @@ main{
   }
   
 .team{
-  background-color: var(--green-color);
+
+  background-color: white;
   color: var(--merun-color);
 
  
@@ -896,6 +893,7 @@ main{
 
 .teamcard{
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   margin: 3rem;
 
@@ -929,8 +927,10 @@ main{
   }
 
 .about{
+  overflow-x: hidden;
     background-color: var(--darkgreen-color);
     height: 80vh;
+    width: 100% !important;
     padding: 4em;
 }
 
@@ -1086,9 +1086,12 @@ main{
 @media only screen and (max-width: 768px) {
     
 
-
+html{
+ 
+}
   body{
-    max-width: 100%;
+    width: 100vh !important;
+
     overflow-x: hidden;
   }
   
@@ -1099,33 +1102,21 @@ nav{
 }
 
 
-/* .grechen-fuemen-regular {
-  font-family: "Grechen Fuemen", serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2rem;
-  padding: 1vh;
-  color: #a43d58;
-}
-
-
-.camera{
-   font-size: 2rem;
-   padding: 2vh;
-   
-} */
 
 .main{
+  width: 100vh !important;
   display: flex;
     flex-direction: column;
 }
 .welcome{
-    padding: 1em !important; 
+  width: 100vh !important;
+    padding: 2em !important; 
     font-size: 0.8rem !important;
 
 }
 
 h1{
+  width: 100vh !important;
     font-size: 3rem !important;
     color: #777;
     margin:2rem 0  ;
@@ -1300,6 +1291,7 @@ p{
 
 
  #card1{
+  width: 100vh !important;
 
   margin: 10% !important;
 
@@ -1310,18 +1302,20 @@ p{
 
 
  .main1{
+  width: 100vh !important;
   display: flex;
     flex-direction: column;
   
 }
 
-h3{
+h3{  width: 100vh !important;
   font-size: 2em;
   margin: 1rem;
   color:var(--merun-color);
 }
 
 section.card1 {
+
 
   width: 60vh;
   height: 90vh;
@@ -1344,13 +1338,15 @@ section.card1 {
     transition: none !important; /* Disable transitions */
 }
 .main1{
-  width: 100wh !important;
+  float: left;
+  width: 110vh !important;
 }
 
 
 
 /* complted till 2nd page */
 .img22{
+  width: 100vh !important;
   margin: 2rem 1rem 2rem -1rem;
 
 }
@@ -1368,7 +1364,9 @@ section.card1 {
 
 
 .why{
+  width: 100vh !important;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   
@@ -1376,18 +1374,21 @@ section.card1 {
 }
 
 .main2{
+  width: 100vh !important;
 padding: 1em;
 }
 
 /* 4TH PAGE */
 
 .services{
+  width: 100vh !important;
   padding: 2em;
-    background-color: whitesmoke;
+    background-color:white;
 }
 
 
 .services>h3{
+  width: 100vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1397,6 +1398,8 @@ padding: 1em;
 
 
 .img{
+  width: 100vh !important;
+
   display: flex;
   flex-direction: column;
 
@@ -1415,6 +1418,7 @@ padding: 1em;
 }
 
 #img1{
+  width: 100vh !important;
 
 margin: 1rem;
 
@@ -1440,6 +1444,8 @@ margin: 1rem;
 /* 6th page */
 
 .teamcard{
+
+  width: 100vh !important;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1447,9 +1453,13 @@ margin: 1rem;
 
   
 }
-
+.img4{
+  display: flex;
+}
 
 .cardt{
+  display: flex;
+  align-items: center;
   margin: 1.5rem;
 }
 .teamcard .cardt:hover{
@@ -1458,6 +1468,11 @@ margin: 1rem;
   transition-duration: 0.8s;
 
 
+}
+
+.cardt:hover .content {
+  transform: scale(1);
+  bottom: 5px;
 }
 
 /* about section */
@@ -1475,8 +1490,10 @@ margin: 1rem;
 }
 
 .about{
+  width: 115vh !important;
   background-color: var(--darkgreen-color);
   height: auto;
+
 
   padding: 2em;
 }
